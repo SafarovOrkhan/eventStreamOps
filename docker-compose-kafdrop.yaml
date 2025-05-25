@@ -1,9 +1,0 @@
-version: '3.8'
-services:
-  kafdrop:
-    image: obsidiandynamics/kafdrop
-    container_name: kafdrop
-    ports:
-      - "9000:9000"
-    environment:
-      KAFKA_BROKERCONNECT: 157.180.115.157:9092

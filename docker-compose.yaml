@@ -27,3 +27,13 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /opt/data:/var/lib/kafka/data  # Store Kafka logs on your local machine.
+
+  kafdrop:
+    image: obsidiandynamics/kafdrop
+    container_name: kafdrop
+    ports:
+      - "9000:9000"
+    environment:
+      KAFKA_BROKERCONNECT: 157.180.115.157:9092\
+    depends_on:
+      - kafka
