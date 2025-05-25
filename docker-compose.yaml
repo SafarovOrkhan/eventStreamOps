@@ -34,6 +34,6 @@ services:
     ports:
       - "9000:9000"
     environment:
-      KAFKA_BROKERCONNECT: 157.180.115.157:9092\
+      KAFKA_BROKERCONNECT: 157.180.115.157:9092
     depends_on:
       - kafka
